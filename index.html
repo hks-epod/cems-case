@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/simple-sidebar.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:300,400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:300,400,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+  <title>CEMS case study</title>
+</head>
+<body>
+
+<!-- No header! -->
+
+<div id="wrapper">
+
+<!-- Sidebar -->
+  <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+          <li class="sidebar-brand">
+            <a href="http://epod.cid.harvard.edu/" target="_blank"><img alt="EPoD logo" src="images/logo.png" class="img-sidebar"></a>
+          </li>
+          <div id="sidestyle">
+            <li>
+                <a href="#top">Introduction</a>
+            </li>
+            <li>
+                <a href="#air">The world’s deadliest air</a>
+            </li>
+            <li>
+                <a href="#cems">Continuous Emissions Monitoring Systems</a>
+            </li>
+            <li>
+                <a href="#pilot">The CEMS pilot</a>
+            </li>
+            <li>
+                <a href="#incentives">Aligning incentives</a>
+            </li>
+            <li>
+              <a href="#holes">Holes in the pipeline from the research to implementation</a>
+            </li>
+            <li>
+              <a href="#oring">“O-Ring” development</a>
+            </li>    
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <li>
+              <a href="https://www.gov.uk/government/organisations/department-for-international-development"><img src="images/UKaid.png" alt="UKaid" width="50px"></a>
+            </li>
+            <li>
+              <div class="small-caption">
+                <p>Based on a project which was partly funded by UK aid. All photographs copyright Evidence for Policy Design.</p> 
+                <p>If you have questions or comments, please <a href="mailto:EPoD@hks.harvard.edu">contact us.</a></p>    
+              </div>
+            </li>
+          </div>
+      </ul>
+  </div>
+<!-- end sidebar -->
+
+<!-- Main story -->
+<div id="page-content-wrapper">
+
+
+<div class="container-fluid test">
+  <div class="row">
+      <h1 id="top">BCURE Case: Continuous Emissions Monitoring System (CEMS) Pilot Project</h1>
+      <hr>
+      <h5>by <a href="http://epod.cid.harvard.edu/">Evidence for Policy Design</a></h5>
+      <h5><span id="datetime">February 2016</span></h5>
+<!--   </div>
+</div> -->
+
+<!-- <div class="splash"> -->
+  <img src="images/Ravi-Surat.jpg" class="img-body" alt="Factory">
+<!-- </div> -->
+
+<!-- <div class="container-fluid test">
+  <div class="row"> -->
+    <section class="col-sm-8">
+        <p>In Surat, a city of 4.6 million inhabitants in the Indian state of Gujarat, the dense city centre is ringed by a band of shabby high-rise buildings that house wholesale textile markets. Beyond that stretch the industrial estates where the textiles are woven and dyed. The horizon is like the stubble of a burnt forest, each smokestack emitting a black or grey thread.</p>
+
+        <p>A film of dust covers Surat. In a teashop, one waiter places the cups and plates face-down to keep them clean, while another uses a bundle of thatch to sweep dust from the entryway. On a wall across the street there are dust-coated posters of Gujarat’s two most famous sons: Mahatma Gandhi and Narendra Modi.</p>
+
+        <p>The state’s economic surge with Modi as Chief Minister 2001–14 helped propel the industry-friendly politician to the nation’s top post. In a 2011 article on “India’s Guangdong” (referring to the province that powered China’s economic rise), <a href="http://www.economist.com/node/18929279" target="_blank">The Economist</a> reported that Gujarat contained only five percent of India's population but accounted for 16 percent of its industrial output and 22 percent of its exports. That same year, the <a href="http://www.citymayors.com/statistics/urban_growth1.html" target="_blank">City Mayors Association</a> ranked Surat as the fourth fastest developing city in the world. More recently, in January 2016 Surat made the list of 20 promising cities the Government of India planned to turn into “<a href="http://www.thehindu.com/news/national/list-of-first-20-smart-cities-under-smart-cities-mission/article8162775.ece?homepage=true" target="_blank">smart cities</a>” by 2020, with high connectivity and improved public services.</p>
+
+        <p>The dust that coats Surat is part and parcel of the city’s new prosperity. The textile industry runs on coal, and every plant has at least one furnace to create steam to power the machines that weave and print, while many have a second one to heat oil for the drying and dying processes. Ash and other particles released through the smokestacks settle over the city, some reaching the lungs of its residents.</p>
+    </section>
+    <img src="images/Dying.jpg" class="img-body" alt="Factory">
+    <section class="col-sm-8">
+        <p>Today, India’s leaders are facing up to the health emergency caused by such particles. They are investigating several policy alternatives, including using new technology to continuously monitor the pollution emitted by individual smokestacks, with Gujarat and two other states serving as testing grounds. Successful monitoring would pave the way for piloting an emissions trading system for particulates, which would portend a major change in India’s policy landscape.</p>
+
+        <p>But the way change at this scale happens is often a mystery, even to those closely involved in creating it.</p>
+
+        <p>The case of one small but essential component of India’s policy experiment – a device that delivers quality information on pollution straight from smokestack to regulator – shows that big change depends on small projects, each with its own technical and political challenges. This case also sheds light on one of the nagging mysteries in development: the difference between how policy solutions work during the testing phase and how they work at scale.</p>
+
+    </section>
+
+    <img src="images/Furnace2.jpg" class="img-body" alt="Factory">
+
+    <section class="col-sm-8">
+      <h2 id="air">The world’s deadliest air</h2>
+
+      <p>Scientists classify particles suspended in the air based on their diameter: the smaller they are, the more easily they embed in the lungs and cause health problems. The smallest class of particles – 2.5 thousandths of a millimetre or smaller, termed PM2.5 – represent the greatest risk, <a href="http://www.who.int/mediacentre/factsheets/fs313/en/" target="_blank">causing cardiovascular and respiratory diseases as well as lung cancer</a>.</p>
+
+      <p>PM2.5 is central to the air quality emergency India faces. India now contains the cities with the <a href="http://www.theguardian.com/cities/2015/dec/02/where-world-most-polluted-city-air-pollution" target="_blank">world’s worst air</a>, and has the highest <a href="http://gamapserver.who.int/gho/interactive_charts/ncd/mortality/chronic_respiratory_diseases/atlas.html" target="_blank">rate of death from chronic respiratory diseases</a> of any country. A <a href="http://scholar.harvard.edu/files/rpande/files/lower_pullution_longer_lives.pdf?m=1424705463" target="_blank">2015 study</a> estimated that if India brought into compliance the areas that exceed its legal limits for particulate air pollution – limits that are still a few times higher than the <a href="http://www.who.int/mediacentre/factsheets/fs313/en/" target="_blank">World Health Organization’s guideline values</a> – then the 660 million people who live in these areas would see life expectancy increase by 3.2 years, on average. Put differently, reducing the most damaging type of air pollution to the legal limit would save India around 2.1 billion life years. The quality-of-life and economic benefits can only be imagined.</p>
+
+      <p>But the country’s efforts to reduce air pollution often conflict with its efforts to increase prosperity, such as the <a href="http://www.makeinindia.com/policy/national-manufacturing" target="_blank">Make in India</a> initiative, which seeks to replicate Gujarat’s success nationwide by raising manufacturing output by 12 to 14 percent annually in the medium term. “There are no ecological or social criteria about ‘making’ in India,” activist Vandana Shiva said in a <a href="http://www.dw.com/en/make-in-india-policy-could-increase-air-pollution-woes/a-18366909" target="_blank">recent interview</a>. “On the contrary, environmental and labor laws are being diluted to attract investors, without social and ecological conditions.”</p>
+
+      <p>In the 1980s the United States faced an air pollution problem, but with a different pollutant. Industrial emissions of sulphur dioxide (SO2) and other gases resulted in acid rain that poisoned lakes and rivers and depleted the nutrients in soil. The US successfully reduced emissions without putting a drag on economic growth by using an emissions trading system, or ETS, a market-based mechanism whereby the government set a cap on the permitted pollution level and allowed industries to bid against each other for the right to emit a percentage of that total. A <a href="https://research.hks.harvard.edu/publications/getFile.aspx?Id=827" target="_blank">recent study</a> estimates that this program, launched in 1990, reduced SO2 emissions by about 50 percent below 1980 levels, and did so at a cost to industry between 15 and 90 percent lower than conventional regulation.</p>
+
+      <p>The effect of this policy success can still be felt, as carbon trading has become a cornerstone of international plans to limit global warming. The <a href="http://ec.europa.eu/clima/policies/ets/index_en.htm" target="_blank">European Union</a> predicts that, relative to 2005 levels, emissions from sectors covered by its ETS will be 21 percent lower by 2020 and 43 percent lower by 2030. <a href="http://www.nytimes.com/2015/09/26/world/asia/china-emissions-xi-jinping-limit-cap-and-trade.html" target="_blank">China</a> began piloting an ETS in 2013, and plans to expand it countrywide by 2017 as a means to stop carbon emissions from rising by 2030.</p>
+
+      <p>Monitoring that yields verifiable data is critical to any such market-based mechanism for reducing emissions – otherwise industries can complain that they are being unfairly charged. This can represent a challenge for countries with overstretched regulators and weak information systems, such as India.</p>
+
+      <p>Furthermore, cap-and-trade systems have historically focused on gases, not particles. Gases are easier to measure and behave differently, diffusing globally, while particles tend to fall over the local and surrounding areas. The Indian government actors and their research partners are therefore attempting something entirely novel.</p>
+
+      <p>Can India develop information systems that ensure high quality monitoring? To do this, they must innovate in several areas – policy design, information systems, right down to the specifications for the hardware that is installed in the smokestacks.</p>
+
+      <p>It is hard to imagine a policy experiment with higher stakes. Not only would a successful monitoring system lay the groundwork for market-based mechanisms that could light the way for poor countries to tackle their outdoor air pollution – which kills <a href="http://www.theguardian.com/environment/2015/sep/16/more-people-die-from-air-pollution-than-malaria-and-hivaids-new-study-shows" target="_blank">more people worldwide than malaria and HIV/AIDS combined</a> – it would create a policy framework for India to identify the costs and benefits of a carbon trading market, or to participate in a global one.</p>
+
+    </section>
+  
+    <section class="col-sm-8">
+    
+      <h2 id="cems">Continuous Emissions Monitoring Systems</h2>
+
+      <p>To rise to this challenge, a highly rigorous approach was in order. The primary government regulators of industrial pollution, the State Pollution Control Boards,  partnered with researchers from <a href="http://epod.cid.harvard.edu" target="_blank">Evidence for Policy Design (EPoD) at Harvard Kennedy School</a>, the University of Chicago, Yale, and J-PAL South Asia. Their aim was to create and evaluate a system that monitors pollution levels in Gujarat and in two other states, Maharashtra and Tamil Nadu. Based on the success or failure there, the system could be rolled out nationwide.</p>
+
+      <p>In a Continuous Emissions Monitoring System, or CEMS, a device that measures the pollution levels in exhaust at a high frequency – once a minute or more – is installed directly into a smokestack. To measure PM2.5, the device flashes light through the stack then measures changes in the optical properties of the gas. A software interface immediately sends the reading to a management information system, or MIS.</p>
+
+      <p>High levels of pollution pouring out of a smokestack not only mean environmental and health risks, they mean that the factory is burning its fuel inefficiently. That costs the factory owner money, and for this reason, some larger factories had already installed CEMS devices. These were a small minority, however, and for the three-state pilot, the research team aimed to install devices in nearly 1000 factories.</p>
+
+      <p>In addition to underpinning the successful operation of any future emissions trading system, the CEMS system promised great improvements in monitoring capabilities. The status quo depended on auditors making periodic visits to factories to take manual samples. But since emissions are highly variable, any single reading said little about the plant’s total quantity of emissions or, by extension, the full impact on air quality. The team’s goal was to replace this system with continuous, real-time, high-quality data that couldn’t be manipulated.</p>
+    
+    </section>
+
+
+
+  <section class="col-sm-8">
+    <h2 id="pilot">The CEMS pilot</h2>
+    
+    <p>Installing CEMS devices widely was a necessary step on the road to an ETS. But even this step involved several sub-steps: the devices had to be adapted for the purpose, technical specifications had to be established, software had to be created to send the information to regulators, and the support of participating ministries has to be enlisted.</p>
+
+    <p>“The entire emissions trading system program will be based on the robustness of the data that we generate on the CEMS program,” says Hardik Shah, Member Secretary of the Gujarat Pollution Control Board or GPCB. Shah’s office is 200 miles north of Surat in a spacious government building in Gandhinagar, a planned city built outside Ahmedabad in the 1960s to serve as Gujarat’s capital. On his desk, towering stacks of files await his signature – reminders of the paper-based system that online reporting aims to replace.</p>
+
+    <p>“To a great extent, this is a totally new concept in India,” says Shah. “It requires a lot of groundwork, calibration and post-calibration care, and a lot of technical inputs from different stakeholders. It was a big job.”</p>
+
+    <p>Gujarat was unique in that it had a progressive and research-friendly Pollution Control Board, and industry leaders who were largely cooperative.</p> 
+
+    <p>Jitendra Vakharia, president of the South Gujarat Textile Processors Association, says his motto is Economy but not at the cost of ecology – and vice versa. Vakharia describes an atmosphere in Gujarat where regulators and industry leaders are on good terms, and veteran factory owners convince newer ones that compliance can mean bigger profits. “Pollution goes down, energy costs go down, and fuel costs go down,” he says. “We are merchants. If you say, go in this direction and you’ll earn more rupees, we’ll go in that direction.”</p>
+
+  </section>
+  <img src="images/Jitendra Vakharia.jpg" class="img-body" alt="Factory">
+  
+  <section class="col-sm-8">
+    <p>In November 2013, Central Pollution Control Board published India’s first technical specifications for particulate matter CEMS, which provided extensive guidelines to state boards, industries, and CEMS device vendors on the rollout and operation of the new technology.</p>
+
+    <p>The next step was to design the interface that would let CEMS devices talk to desktop computers, but such an innovation requires an outlay of capital. Nicholas Ryan of Yale University, one of the Principal Investigators on the project, explains. “What drives innovation? If we’re talking about a better screw-top on a beer bottle, then it’s profits. But when it’s monitoring pollution, a public good, it won’t happen unless there’s an infusion of money.”</p>
+
+    <p>Support from the <a href="https://bcureglobal.wordpress.com" target="_blank">Building Capacity to Use Research Evidence (BCURE)</a> program, funded by the UK’s Department for International Development, allowed the team to collaborate with Hardik Shah and his colleagues to invest in custom software that would take the GPCB’s information system from a few unreliable readings per year to continuous, high-quality, real-time data. The team developed custom software with two components – one installed at the industry sites that communicated with CEMS device software and the other installed at a GPCB server, which is linked to the industry side via a secure communication protocol. Researchers installed CEMS devices in 11 plants in Gujarat, and tested the system. They also trained GPCB officials at different levels to use the system, and adjusted the software based on their feedback.</p>
+
+  </section>
+  <img src="images/Computer at Plant.jpg" class="img-body" alt="Factory">
+  
+  <section class="col-sm-8">
+    <p>By the end of the BCURE-funded period, the devices were generating continuous reports containing accurate information on emissions, and sending them to both the GPCB and the plants themselves. The server also sent automatic alerts by email and SMS to both GPCB and the industries when emissions were particularly high.</p>
+
+    <p>Around this time, the Central Pollution Control Board in Delhi decided to mandate CEMS for all industries across the country. However, this does not mean automatic buy-in by the relevant stakeholders. According to Shah, “CEMS is a new concept, even for ministries. They had a lot of ifs and buts in mind. If this research has a concrete outcome, we’ll see more acceptance of the system.”</p>
+
+    <p>Indeed, the “ifs and buts” are prevailing for the time being. Central Pollution Control Board is struggling to implement its mandate for continuous monitoring, so the next stage of the CEMS pilot is critical.</p>
+    
+  </section>
+
+  <section class="col-sm-8">
+    <h2 id="incentives">Aligning incentives</h2>
+    
+    <p>This is not the first time Hardik Shah had collaborated with this group of researchers. Starting in 2009 the GPCB partnered with Ryan, Rohini Pande of Harvard, Esther Duflo of MIT, Michael Greenstone of the University of Chicago, and local implementing partner J-PAL South Asia to test policy reforms to the state’s pollution monitoring system.</p>
+
+    <p>At the time, third-party auditors manually tested emissions during visits to the factories. Based on their reports, the GPCB would issue warnings and, in extreme cases, shut cut off a plant’s power supply.</p>
+
+    <p>When the research team conducted their own checks of pollution levels they found widespread misreporting – often targeted to be just under the emissions standard. This was not surprising. Since the auditors were hired and paid by the industries themselves, reporting violations amounted to biting the hand that fed them.</p>
+
+    <p>The research team came up with a set of reforms they believed might realign the auditors’ incentives. Auditors would be randomly assigned to firms, paid a fixed rate from a central pool and, in the second year of the study, receive incentive pay for accuracy. This new scheme was tested in a large-scale randomized controlled trial involving 473 plants.</p>
+
+    <p>The results, published in a <a href="http://qje.oxfordjournals.org/content/128/4/1499.abstract" target="_blank">2013 paper</a>, showed that auditors in the treatment group were 80 percent more likely to give an accurate report–- which, importantly, led those plants to reduce their pollution emissions. In January 2015, the GPCB implemented <a href="http://www.gpcb.gov.in/Portal/News/70_1_Audit-Press-Note-eng-guj-Final.pdf" target="_blank">new guidelines</a> that required environmental auditors to be randomly assigned to industrial plants and have their work double-checked for accuracy.</p>
+
+    <p>Now fast forward to today’s expansion of the CEMS pilot, which seeks to take monitoring quality to a much higher level. The test run in 11 plants showed that the system worked. Now researchers are installing devices in many more plants, in stages to allow them to test the effect of continuous monitoring on industry behaviour and actual pollution levels. CEMS devices have been installed in 127 plants in Gujarat and 370 total across the three-state pilot.</p>
+
+    <p>As the devices are installed, they have to be calibrated.</p>
+
+    <p>To understand why, imagine there’s a drought and you’re only allowed to use a certain number of litres of water per day. The tap for your garden hose has a range of settings from low to high. Setting the tap on high won’t tell you how many litres per minute the tap emits – for that you’d have to run it into a tub for one minute and measure what came out. If you did that for the different settings, you’d be able to roughly gauge water use in your garden.</p>
+
+    <p>Similarly, the CEMS device gives detailed readings on a low-to-high scale, but it can’t tell regulators the actual volume of pollution being emitted without first being calibrated to a manual reading. Currently these manual measurements are taken by third-party accredited laboratories.</p>
+
+  </section>
+  <img src="images/sampling probe with traverse point marking (in blue).jpg" class="img-body" alt="Factory">
+  
+  <section class="col-sm-8">
+    <p>Anant Sudarshan is India Director of the Energy Policy Institute at the University of Chicago and another of the CEMS project principal investigators. He describes how a similar conflict of interest might be creating inaccuracies in CEMS readings. “These industries had just been audited as part of a baseline survey, so we knew their emissions levels. Then, when they calibrated with CEMS, they all seemed remarkably clean. It’s sort of a red flag.”</p>
+    
+  </section>
+
+<section class="col-sm-8">
+    <h2 id="holes">Holes in the pipeline from the research to implementation</h2>
+
+    <p>Scale-up of CEMS had promised to be simple: the technology was there, and it worked well in the test run. But now to ensure accuracy, adjustments may have to be made, similar to those recommended in the third-party auditors study.</p>
+
+    <p>One way to view this is as a stumbling block – after all, it slows down the CEMS study which in turn delays the ETS. But another way to see it is as an opportunity to better understand why scale-up often falters, and what can be done about it.</p>
+
+    <p>In recent decades, one of the strongest trends in global development research has been the use of experimental and quasi-experimental methods to test out programs, accompanied by the belief that passing such a test is grounds for expanding a program to a larger area, or trying it out in another country. However, as this methodology has spread, it has become clear that the success of a pilot neither foreshadows nor resolves the implementation snafus that surface when the program is rolled out at scale, or implemented by a different agency, or exported to a different context.</p>
+
+    <p>A number of recent papers seek to understand what predicts holes in the pipeline from the positive result to successful implementation.</p>
+
+    <p>For instance, a <a href="http://www.cgdev.org/publication/scaling-what-works-experimental-evidence-external-validity-kenyan-education-working" target="_blank">2013 study</a> looked at a reform – placing extra contracted teachers in schools – that had been shown to significantly raise children’s test scores in rigorous evaluations conducted in areas of India and Kenya. Now the program was being rolled out across all of Kenya. The researchers randomly placed schools into three different groups: one where an international NGO implemented the program, one where the government implemented it, and a control group. The NGO group showed the same improvement in test scores as found in previous studies, but the government group showed no improvement. The authors suggest that a complex set of factors rendered the government’s implementation ineffective, including resource constraints and political considerations regarding the teacher’s union.</p>
+
+    <p>A <a href="http://scholar.harvard.edu/remahanna/publications/deal-devil-successes-and-limitations-bureaucratic-reform-india" target="_blank">working paper</a> by Iqbal Dhaliwal and Rema Hanna showed that using biometric attendance monitors in 140 health centres in India raised staff attendance, and that this translated to measurable health gains: deliveries by doctors increased by 16 percent, and the probability of a baby being born with low birth weight went down by 26 percent. Yet, mysteriously, women in the areas served by health centres with the improved system started travelling to control hospitals to deliver their babies. A search for the reasons why led the authors into another complex maze of resource constraints and political economy considerations – as well as possible corruption, with staff skimming off government grant funds by transferring patients. The authors also witnessed a widespread tolerance for high absenteeism rates, since cracking down might create discord among the hospital staff in undesirable rural posts.</p>
+
+    <p>Working through implementation details is increasingly central to policy-research collaborations, and Evidence for Policy Design ingrains the process into all of its engagements. EPoD’s Smart Policy Design methodology emphasises a system whereby policies are not simply tested and then set sail, but are designed to incorporate feedback mechanisms that will continually test their efficacy and produce data on their performance.</p>
+
+    <p>2015 Nobel laureate Angus Deaton has been calling for such feedback mechanisms for some time. In a <a href="https://www.princeton.edu/~deaton/downloads/deaton%20instruments%20randomization%20learning%20about%20development%20jel%202010.pdf" target="_blank">2010 piece</a>, he stated that “the analysis of projects needs to be refocused toward the investigation of potentially generalizable mechanisms that explain why and in what contexts projects can be expected to work.”</p>
+
+    <p>The scale-up of CEMS may require policy add-ons that will realign the incentives of those charged with manually calibrating the machinery. A tech solution may require some behavioural-economics tweaking. Sudarshan takes this in stride: “The good thing is that these are not hard problems to detect, and they are problems that our previous research has in some sense solved. So they shouldn’t be hard to solve this time.”</p>
+
+  </section>
+  <img src="images/Mill 2.jpg" class="img-body" alt="Factory">
+  
+  <section class="col-sm-8">
+    <h2 id="oring">“O-Ring” development</h2>
+
+    <p>At a textile mill in Surat, dozens of mechanical looms raise a rhythmic, clattering racket like train wheels speeding over steel tracks. Even outside by the furnaces, you have to shout to be heard. A factory worker is shovelling coal into a furnace, a technician from an accredited lab is going up and down the smokestack taking samples, and a research assistant from J-PAL SA is observing. The process takes all day, as they test the emissions at high, medium, and low furnace capacity; their mood is amicable, if a little daunted by heat and noise. You’d never guess that you were witnessing a “monitoring the monitors” situation.</p>
+
+    <p>This is one of new safeguards the research team has put in place to ensure that this step of the research process doesn’t drop into an implementation hole. Another safeguard is surprisingly low-tech: research assistants check emissions visually, from the ground, comparing the colour of the smoke from smokestacks to shades of grey on a Ringelmann smoke chart – the darker the smoke, the higher the PM2.5 content. Yet another involves training sessions with the third-party lab technicians.</p>
+    
+  </section>
+  <img src="images/Ringelmann-Ravi.jpg" class="img-body" alt="Factory">
+  
+  <section class="col-sm-8">
+    <p>It is not an exaggeration to say that the prospect of successful CEMS installation – and the possibility of market mechanisms for emissions – depends on such measures. In a <a href="http://www.jstor.org/stable/2118400?origin=JSTOR-pdf&seq=1#page_scan_tab_contents" target="_blank">1993 paper</a>, Michael Kremer put forth what he called an “O-Ring Theory of Economic Development”:</p>
+
+    <blockquote>Many production processes consist of a series of tasks, mistakes in any of which can dramatically reduce the product's value. The space shuttle Challenger had thousands of components: it exploded because it was launched at a temperature that caused one of those components, the O-rings, to malfunction. "Irregular" garments with slight imperfections sell at half price. Companies can fail due to bad marketing, even if the product design, manufacturing, and accounting are excellent.</blockquote>
+     
+    <p>Kremer went on to use the analogy to create a framework for understanding roles within a firm and why labour in developing economies is cheaper and more focused on the first stages of production than in developed economies. But his metaphor can also be applied to policymaking for development. The only way to approach big development goals such as reducing air pollution and slowing climate change is through masses of interlinked activities by actors who often have imperfect communication and conflicting goals. And the entire effort is only as strong as its weakest link.</p>
+
+    <p>In the case of building a robust air monitoring protocol, piloting CEMS, and laying the groundwork for an emissions trading system for particulates in India, the O-ring could have been funding: only with an outlay of capital from outside the government could that necessary component of a necessary component be built. Or the O-ring could have been misaligned incentives: without proper monitoring, hundreds of CEMS devices could now be feeding artificially low readings to the regulators, undercutting the quality of any future market. But new technologies and empirical methods are allowing us to better understand such weak links. Whether the system flies, we’ll know in the next few years. &#9632;</p>
+
+  </section>
+  
+
+    <section class="col-sm-8">
+    <br>
+    <p>Text by V. McIntyre. Design by Angela Ambroz.</p> 
+  </section>
+
+  </div> <!-- row -->
+</div> <!-- container -->
+
+
+</div> <!-- #page-content-wrapper -->
+</div> <!-- #wrapper -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
